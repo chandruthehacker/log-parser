@@ -65,4 +65,6 @@ python parser.py -f sample_log_files/sample_auth.log -t authlog -o json
 ```
 ---
 Then view the files in ## output/ folder
+output/alerts.json
+output/parsed_data.json
 ---
