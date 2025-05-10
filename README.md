@@ -48,20 +48,21 @@
 git clone https://github.com/chandruthehacker/log-parser.git
 cd log-parser
 pip install -r requirements.txt
-
+```
 ---
 
 ## 🧪 Usage
 
 ```bash
 python parser.py -f <log_file_path> [-t <log_type>] [-o <output_format>]
-
+```
 ---
 
-## Example
+## ⚡ Example
 
 ```bash
 python parser.py -f sample_log_files/sample_auth.log -t authlog -o json
+```
 ---
 Then view the files in ## output/ folder
 ---
