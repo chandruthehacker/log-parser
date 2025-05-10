@@ -1,0 +1,41 @@
+{
+    "Brute-Force SSH Attack": [
+        "192.168.1.10 failed to login 4 times (possible brute-force)",
+        "203.0.113.15 failed to login 4 times (possible brute-force)"
+    ],
+    "Suspicious Login Times": [
+        "chandru logged in from 192.168.1.10 at odd hour 2:00 (2025-01-01 02:00:01)",
+        "chandru logged in from 192.168.1.10 at odd hour 2:00 (2025-01-01 02:00:04)",
+        "anthony logged in from 10.0.0.20 at odd hour 3:00 (2025-01-01 03:00:05)",
+        "sanjay logged in from 192.168.1.25 at odd hour 4:00 (2025-01-01 04:00:15)",
+        "chandru logged in from 192.168.1.10 at odd hour 5:00 (2025-01-01 05:00:01)",
+        "chandru logged in from 192.168.1.10 at odd hour 1:00 (2025-01-02 01:00:01)",
+        "anthony logged in from 10.0.0.20 at odd hour 1:00 (2025-01-02 01:00:05)",
+        "prince logged in from 172.16.0.5 at odd hour 3:00 (2025-01-02 03:00:10)",
+        "sanjay logged in from 192.168.1.25 at odd hour 3:00 (2025-01-02 03:00:15)",
+        "chandru logged in from 192.168.1.10 at odd hour 5:00 (2025-01-02 05:00:01)",
+        "chandru logged in from 192.168.1.10 at odd hour 0:00 (2025-01-03 00:00:01)",
+        "anthony logged in from 10.0.0.20 at odd hour 2:00 (2025-01-03 02:00:05)",
+        "prince logged in from 172.16.0.5 at odd hour 4:00 (2025-01-03 04:00:10)",
+        "sanjay logged in from 192.168.1.25 at odd hour 4:00 (2025-01-03 04:00:15)"
+    ],
+    "Logins from New or Rare IPs": [
+        "New IP 192.168.1.10 used by chandru at 2025-01-01 02:00:01",
+        "New IP 10.0.0.20 used by anthony at 2025-01-01 03:00:05",
+        "New IP 192.168.1.25 used by sanjay at 2025-01-01 04:00:15",
+        "New IP 172.16.0.5 used by prince at 2025-01-02 03:00:10"
+    ],
+    "Multiple Failed Then Successful Login": [
+        "192.168.1.10 user chandru succeeded login after 4 failures"
+    ],
+    "Sudden Sudo Access": [
+        "chandru ran sudo command '/bin/su - root  # Sudden sudo' at 2025-01-06 16:00:01",
+        "anthony ran sudo command '/usr/sbin/apache2ctl graceful' at 2025-01-06 16:00:05",
+        "prince ran sudo command '/usr/bin/git pull origin main' at 2025-01-06 08:00:10",
+        "sanjay ran sudo command '/usr/sbin/nginx -s reload' at 2025-01-06 08:00:15",
+        "chandru ran sudo command '/usr/bin/apt-get update' at 2025-01-06 17:00:01",
+        "anthony ran sudo command '/usr/bin/vim /etc/ssh/sshd_config' at 2025-01-06 18:00:05",
+        "prince ran sudo command '/usr/bin/tar -czvf backup.tar.gz /var/www' at 2025-01-06 19:00:10",
+        "sanjay ran sudo command '/usr/bin/tail -f /var/log/mysql/error.log' at 2025-01-06 20:00:15"
+    ]
+}

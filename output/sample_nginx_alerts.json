@@ -1,0 +1,40 @@
+{
+    "Repeated 4xx/5xx Errors": [
+        "192.168.1.10 had 5 4xx errors.",
+        "192.168.1.11 had 3 5xx errors.",
+        "192.168.1.12 had 3 4xx errors.",
+        "192.168.1.14 had 2 5xx errors."
+    ],
+    "Sensitive File Access Attempts": [
+        "192.168.1.13 tried to access sensitive file '/../../../../etc/passwd' at 01/Jan/2024:00:00:12 +0000",
+        "192.168.1.13 tried to access sensitive file '/../../../../etc/passwd' at 01/Jan/2024:00:00:13 +0000",
+        "192.168.1.20 tried to access sensitive file '/.env' at 01/Jan/2024:00:00:20 +0000",
+        "192.168.1.21 tried to access sensitive file '/.git/config' at 01/Jan/2024:00:00:25 +0000",
+        "192.168.1.22 tried to access sensitive file '/config.php' at 01/Jan/2024:00:00:30 +0000",
+        "192.168.1.23 tried to access sensitive file '/wp-config.php' at 01/Jan/2024:00:00:35 +0000",
+        "192.168.1.24 tried to access sensitive file '/etc/passwd' at 01/Jan/2024:00:00:40 +0000",
+        "192.168.1.20 tried to access sensitive file '/.env' at 01/Jan/2024:00:00:45 +0000",
+        "192.168.1.21 tried to access sensitive file '/.git/config' at 01/Jan/2024:00:00:50 +0000",
+        "192.168.1.22 tried to access sensitive file '/config.php' at 01/Jan/2024:00:00:55 +0000",
+        "192.168.1.23 tried to access sensitive file '/wp-config.php' at 01/Jan/2024:00:01:00 +0000",
+        "192.168.1.24 tried to access sensitive file '/etc/passwd' at 01/Jan/2024:00:01:05 +0000"
+    ],
+    "High Request Rate (Possible DoS)": [
+        "192.168.1.30 made 15 requests in under 10 seconds."
+    ],
+    "Suspicious User Agents": [
+        "Suspicious user-agent 'curl/7.68.0' from 192.168.1.11 at 01/Jan/2024:00:00:06 +0000",
+        "Suspicious user-agent 'curl/7.68.0' from 192.168.1.11 at 01/Jan/2024:00:00:07 +0000",
+        "Suspicious user-agent 'curl/7.68.0' from 192.168.1.11 at 01/Jan/2024:00:00:08 +0000",
+        "Suspicious user-agent 'curl/7.81.0' from 192.168.1.20 at 01/Jan/2024:00:00:20 +0000",
+        "Suspicious user-agent 'curl/7.79.1' from 192.168.1.24 at 01/Jan/2024:00:00:40 +0000",
+        "Suspicious user-agent 'curl/7.81.0' from 192.168.1.20 at 01/Jan/2024:00:00:45 +0000",
+        "Suspicious user-agent 'curl/7.79.1' from 192.168.1.24 at 01/Jan/2024:00:01:05 +0000",
+        "Suspicious user-agent 'sqlmap/1.7.2' from 192.168.1.40 at 01/Jan/2024:00:01:15 +0000",
+        "Suspicious user-agent 'nmap/7.91' from 192.168.1.41 at 01/Jan/2024:00:01:20 +0000",
+        "Suspicious user-agent 'curl/7.83.0' from 192.168.1.42 at 01/Jan/2024:00:01:25 +0000",
+        "Suspicious user-agent 'sqlmap/1.7.2' from 192.168.1.40 at 01/Jan/2024:00:01:40 +0000",
+        "Suspicious user-agent 'nmap/7.91' from 192.168.1.41 at 01/Jan/2024:00:01:45 +0000",
+        "Suspicious user-agent 'curl/7.83.0' from 192.168.1.42 at 01/Jan/2024:00:01:50 +0000"
+    ]
+}
