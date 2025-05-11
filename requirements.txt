@@ -1,5 +1,4 @@
 pandas
 matplotlib
 seaborn
-halo
 pyfiglet
