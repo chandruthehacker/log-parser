@@ -62,7 +62,7 @@ Using a virtual environment isolates the project dependencies and prevents confl
 
 2.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/chandruthehacker/log-parser.git](https://github.com/chandruthehacker/log-parser.git)
+    git clone https://github.com/chandruthehacker/log-parser.git
     cd log-parser
     ```
 
@@ -110,7 +110,7 @@ Using a virtual environment isolates the project dependencies and prevents confl
 
 3.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/chandruthehacker/log-parser.git](https://github.com/chandruthehacker/log-parser.git)
+    git clone https://github.com/chandruthehacker/log-parser.git
     cd log-parser
     ```
 
@@ -148,7 +148,7 @@ Using a virtual environment isolates the project dependencies and prevents confl
 
 4.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/chandruthehacker/log-parser.git](https://github.com/chandruthehacker/log-parser.git)
+    git clone https://github.com/chandruthehacker/log-parser.git)
     cd log-parser
     ```
 
