@@ -1,12 +1,12 @@
 import time
 import argparse
+from halo import Halo
 import pyfiglet
 from detections.detection import log_detection
 from utils.detector import detect_log_type
 from utils.output import save_to_csv, save_to_excel, save_to_json, print_to_cli
 from utils.visualizer import generate_visualization
 from log_patterns import log_modules
-import sys
 
 def parse_log_file(filename, log_type):
     parser_module = log_modules.get(log_type)
@@ -24,7 +24,7 @@ def parse_log_file(filename, log_type):
 
     if not parsed_data:
         raise ValueError("No valid log entries were parsed.")
-
+    
     return parsed_data
 
 
@@ -53,18 +53,14 @@ def main():
         parsed_logs = parse_log_file(filename, log_type)
         print(f"[+] Parsed {len(parsed_logs)} log entries.")
 
-        spinners = ['-', '\\', '|', '/']
-        print("Generating output...", end="", flush=True)
-        for i in range(20):
-            sys.stdout.write(f"\rGenerating output... {spinners[i % len(spinners)]}")
-            sys.stdout.flush()
-            time.sleep(0.1)
-        print("\rGenerating output... Done!")
-
+        spinner = Halo(text='Generating output...', spinner='dots')
+        spinner.start()
+        time.sleep(1)
         alerts = log_detection(parsed_logs, log_type)
 
-        print("\n")
 
+        print("\n")
+        
         if output_format == "csv":
             save_to_csv(parsed_logs, alerts)
         elif output_format == "excel":
@@ -76,6 +72,7 @@ def main():
         elif output_format == "cli":
             print_to_cli(parsed_logs, alerts)
 
+        spinner.succeed("Log parsing complete!")
 
     except Exception as e:
         print(f"[!] Error: {e}")
@@ -85,14 +82,8 @@ if __name__ == "__main__":
     ascii_banner = pyfiglet.figlet_format("Log Parser")
     print(ascii_banner)
     print("\t\t- By chandruthehacker\n\n")
-
-
-    spinners = ['-', '\\', '|', '/']
-    print("Initializing tool...", end="", flush=True)
-    for i in range(20):
-        sys.stdout.write(f"\rInitializing tool... {spinners[i % len(spinners)]}")
-        sys.stdout.flush()
-        time.sleep(0.1)
-    print("\rInitializing tool... Ready!")
-
+    spinner = Halo(text='Initializing tool...', spinner='dots')
+    spinner.start()
+    time.sleep(2)
+    spinner.succeed('Ready!')
     main()
