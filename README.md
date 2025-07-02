@@ -7,9 +7,9 @@
 > 🔍 A powerful CLI tool for parsing, detecting, and analyzing various system and web server log files with real-time alerts and multiple output formats.
 
 ---
-
+<p align="center">
 ![Log Parser Banner](https://chandruthehacker.github.io/portfolio-website-old/projects/all-projects/log-analysis/assets/images/log-parser.webp)
-
+</p>
 ---
 
 ## 🚀 Overview
