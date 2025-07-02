@@ -8,6 +8,10 @@
 
 ---
 
+![Log Parser Banner](https://chandruthehacker.github.io/portfolio-website-old/projects/all-projects/log-analysis/assets/images/log-parser.webp)
+
+---
+
 ## 🚀 Overview
 
 **Log Parser** is a universal log analysis tool built for cybersecurity professionals, SOC analysts, and sysadmins. It automatically detects the log type, parses each entry, and performs threat detection including:
